@@ -7,6 +7,7 @@ import { RouterProvider } from "react-router/dom";
 import AuthPage from './features/auth/AuthPage.tsx';
 import BookDisplayPage from './features/book-display/BookDisplayPage/BookDisplayPage.tsx';
 import DetailedBookPage from './features/book-display/DetailedBookDisplay/DetailedBookPage.tsx';
+import UserBooksPage from './features/my-books-display/UserBooksPage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -20,8 +21,13 @@ const router = createBrowserRouter([
       {
         path: "/books/:id",
         element: <DetailedBookPage />
+      },
+      // NOTE: the endpoint is /mybooks, not /my/books. 
+      // The former doesn't seem to work with json-server
+      {
+        path: "/mybooks",
+        element: <UserBooksPage />
       }
-
     ]
   },
   {

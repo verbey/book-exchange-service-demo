@@ -144,5 +144,15 @@
             "description": "A contemporary novel about identity in an increasingly virtual world.",
             "rating": 4.1
         }
+    ],
+    "mybooks": [
+        {
+            "userId": "a55d",
+            "bookIds": [
+                "1",
+                "4",
+                "7"
+            ]
+        }
     ]
 }
