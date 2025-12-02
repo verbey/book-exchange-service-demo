@@ -12,5 +12,111 @@
             "jwt": "some-random-text",
             "id": "a55d"
         }
+    ],
+    "books": [
+        {
+            "name": "Example Book",
+            "author": "Jane Doe",
+            "published": "2020",
+            "pages": 320,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "1"
+        },
+        {
+            "name": "Another Book",
+            "author": "John Smith",
+            "published": "2018",
+            "pages": 250,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "2"
+        },
+        {
+            "name": "Third Book",
+            "author": "Alice Johnson",
+            "published": "2022",
+            "pages": 300,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "3"
+        },
+        {
+            "name": "Midnight Horizons",
+            "author": "Samuel K. Lee",
+            "published": "2019",
+            "pages": 384,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "4"
+        },
+        {
+            "name": "The Whispering Library",
+            "author": "Nina Patel",
+            "published": "2021",
+            "pages": 278,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "5"
+        },
+        {
+            "name": "Quantum Threads",
+            "author": "Marco Alvarez",
+            "published": "2020",
+            "pages": 412,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "6"
+        },
+        {
+            "name": "Echoes of Ember",
+            "author": "Leila Hassan",
+            "published": "2017",
+            "pages": 335,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "7"
+        },
+        {
+            "name": "Silk Roads & Digital Dreams",
+            "author": "Omar Farooq",
+            "published": "2022",
+            "pages": 291,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "8"
+        },
+        {
+            "name": "Beneath the Neon Sky",
+            "author": "Claire Whitaker",
+            "published": "2018",
+            "pages": 357,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "9"
+        },
+        {
+            "name": "The Last Cartographer",
+            "author": "Ravi Desai",
+            "published": "2023",
+            "pages": 322,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "10"
+        },
+        {
+            "name": "Garden of Static",
+            "author": "Mia Chen",
+            "published": "2020",
+            "pages": 268,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "11"
+        },
+        {
+            "name": "Chronicles of the Forgotten",
+            "author": "Victor Ramos",
+            "published": "2019",
+            "pages": 401,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "12"
+        },
+        {
+            "name": "Pixelated Horizons",
+            "author": "Aisha Karim",
+            "published": "2021",
+            "pages": 310,
+            "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
+            "id": "13"
+        }
     ]
 }
