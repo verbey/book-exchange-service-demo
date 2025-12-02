@@ -20,7 +20,9 @@
             "published": "2020",
             "pages": 320,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "1"
+            "id": "1",
+            "description": "A concise introduction to modern examples and practical patterns for everyday readers.",
+            "rating": 4.1
         },
         {
             "name": "Another Book",
@@ -28,7 +30,9 @@
             "published": "2018",
             "pages": 250,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "2"
+            "id": "2",
+            "description": "A thoughtful exploration of themes and narratives for curious minds.",
+            "rating": 3.9
         },
         {
             "name": "Third Book",
@@ -36,7 +40,9 @@
             "published": "2022",
             "pages": 300,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "3"
+            "id": "3",
+            "description": "A modern tale blending character-driven storytelling with sharp insights.",
+            "rating": 4.3
         },
         {
             "name": "Midnight Horizons",
@@ -44,7 +50,9 @@
             "published": "2019",
             "pages": 384,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "4"
+            "id": "4",
+            "description": "A sweeping, atmospheric novel about discovery and late-night revelations.",
+            "rating": 4.5
         },
         {
             "name": "The Whispering Library",
@@ -52,7 +60,9 @@
             "published": "2021",
             "pages": 278,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "5"
+            "id": "5",
+            "description": "A cozy mystery set among stacks of forgotten books and quiet secrets.",
+            "rating": 4.0
         },
         {
             "name": "Quantum Threads",
@@ -60,7 +70,9 @@
             "published": "2020",
             "pages": 412,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "6"
+            "id": "6",
+            "description": "A speculative science-fiction epic weaving technology, fate, and human connection.",
+            "rating": 4.4
         },
         {
             "name": "Echoes of Ember",
@@ -68,7 +80,9 @@
             "published": "2017",
             "pages": 335,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "7"
+            "id": "7",
+            "description": "A lyrical story of memory, loss, and the sparks that keep us going.",
+            "rating": 4.2
         },
         {
             "name": "Silk Roads & Digital Dreams",
@@ -76,7 +90,9 @@
             "published": "2022",
             "pages": 291,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "8"
+            "id": "8",
+            "description": "Essays and reflections on globalization, culture, and the digital age.",
+            "rating": 3.8
         },
         {
             "name": "Beneath the Neon Sky",
@@ -84,7 +100,9 @@
             "published": "2018",
             "pages": 357,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "9"
+            "id": "9",
+            "description": "A fast-paced urban thriller that explores the city's underbelly.",
+            "rating": 4.0
         },
         {
             "name": "The Last Cartographer",
@@ -92,7 +110,9 @@
             "published": "2023",
             "pages": 322,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "10"
+            "id": "10",
+            "description": "An adventurous journey through lost maps and forgotten borders.",
+            "rating": 4.6
         },
         {
             "name": "Garden of Static",
@@ -100,7 +120,9 @@
             "published": "2020",
             "pages": 268,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "11"
+            "id": "11",
+            "description": "Poetic short stories that examine the noise and silence of modern life.",
+            "rating": 3.7
         },
         {
             "name": "Chronicles of the Forgotten",
@@ -108,7 +130,9 @@
             "published": "2019",
             "pages": 401,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "12"
+            "id": "12",
+            "description": "A sweeping fantasy saga about memory, empire, and reclamation.",
+            "rating": 4.5
         },
         {
             "name": "Pixelated Horizons",
@@ -116,7 +140,9 @@
             "published": "2021",
             "pages": 310,
             "imageUrl": "https://marketplace.canva.com/EAFMf17QgBs/1/0/1003w/canva-green-and-yellow-modern-book-cover-business-Ah-do4Y91lk.jpg",
-            "id": "13"
+            "id": "13",
+            "description": "A contemporary novel about identity in an increasingly virtual world.",
+            "rating": 4.1
         }
     ]
 }

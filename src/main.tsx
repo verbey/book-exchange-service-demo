@@ -6,6 +6,7 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import AuthPage from './features/auth/AuthPage.tsx';
 import BookDisplayPage from './features/book-display/BookDisplayPage/BookDisplayPage.tsx';
+import DetailedBookPage from './features/book-display/DetailedBookDisplay/DetailedBookPage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,12 @@ const router = createBrowserRouter([
       {
         path: "/books",
         element: <BookDisplayPage />
+      },
+      {
+        path: "/books/:id",
+        element: <DetailedBookPage />
       }
+
     ]
   },
   {
