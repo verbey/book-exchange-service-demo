@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
-type AuthState = {
+interface AuthState {
     name: string | null
     jwt: string | null
     setName: (name: string | null) => void
