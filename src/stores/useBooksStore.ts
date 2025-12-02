@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import type { BookCardProps } from '../features/book-display/types/BookCardProps'
 
-type BooksState = {
+interface BooksState {
     books: BookCardProps[]
     loading: boolean
     error: string | null
