@@ -10,7 +10,7 @@ import type { BookCardProps } from "./types/BookCardProps";
 
 function BookCard(props: BookCardProps) {
     return (
-        <Card className="w-72 h-96 border border-gray-300 box-border flex flex-col overflow-hidden">
+        <Card className="w-full h-96 border border-gray-300 box-border flex flex-col overflow-hidden">
             <CardHeader className="px-4 py-3 flex-none">
                 <CardTitle className="break-words">{props.name}</CardTitle>
                 <CardDescription>
