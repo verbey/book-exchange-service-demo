@@ -1,5 +1,6 @@
 import { BookFilters } from "../BookFilters/BookFilters"
 import { BookGrid } from "../BookGrid"
+import ResultsPagination from "../ResultsPagination/ResultsPagination";
 import useFetchBooks from "./useFetchBooks";
 
 function BookDisplayPage() {
@@ -20,6 +21,9 @@ function BookDisplayPage() {
                 {loading && <p>Loading books...</p>}
                 {error && <p className="text-red-500">Error: {error}</p>}
                 {books && <BookGrid books={books} />}
+                <div className="mt-4 flex justify-center">
+                    <ResultsPagination />
+                </div>
             </section>
         </div>
     )

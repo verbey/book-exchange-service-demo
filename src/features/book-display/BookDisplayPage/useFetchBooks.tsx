@@ -15,6 +15,7 @@ export default function useFetchBooks(): UseFetchBooksResult {
     const setBooks = useBooksStore((s) => s.setBooks)
     const setLoading = useBooksStore((s) => s.setLoading)
     const setError = useBooksStore((s) => s.setError)
+    const setPaginationMeta = useBooksStore((s) => s.setPaginationMeta)
     const filters = useBooksStore((s) => s.filters)
 
     const fetchBooks = useCallback(async (signal?: AbortSignal) => {
@@ -35,6 +36,12 @@ export default function useFetchBooks(): UseFetchBooksResult {
                 params.set('_sort', filters.sortBy)
                 params.set('_order', 'asc')
             }
+            if (typeof filters?.page === 'number') {
+                params.set('_page', String(filters.page))
+            }
+            if (typeof filters?.limit === 'number') {
+                params.set('_limit', String(filters.limit))
+            }
 
             const url = `http://localhost:3000/books${params.toString() ? `?${params.toString()}` : ''}`
             const res = await fetch(url, { signal });
@@ -42,9 +49,50 @@ export default function useFetchBooks(): UseFetchBooksResult {
                 throw new Error(`Failed to fetch books: ${res.status} ${res.statusText}`);
             }
 
-            const data = (await res.json()) as BookCardProps[];
+            const json: unknown = await res.json()
 
-            setBooks(data);
+            // When pagination is used, json-server (or your adapter) returns an object
+            // like: { first, prev, next, last, pages, items, data: [...] }.
+            // Otherwise it may just return an array of books.
+            let data: BookCardProps[] = []
+            if (Array.isArray(json)) {
+                data = json as BookCardProps[]
+                setPaginationMeta(undefined)
+            } else if (json && typeof json === 'object') {
+                const obj = json as Record<string, unknown>
+
+                // Extract data array
+                if (Array.isArray(obj.data)) {
+                    data = obj.data as BookCardProps[]
+                } else if (Array.isArray(obj.results)) {
+                    data = obj.results as BookCardProps[]
+                }
+
+                // Extract pagination metadata when present
+                const first = typeof obj.first === 'number' ? obj.first : null
+                const prev = typeof obj.prev === 'number' ? obj.prev : null
+                const next = typeof obj.next === 'number' ? obj.next : null
+                const last = typeof obj.last === 'number' ? obj.last : null
+                const pages = typeof obj.pages === 'number' ? obj.pages : null
+                const items = typeof obj.items === 'number' ? obj.items : null
+
+                if (
+                    first !== null ||
+                    prev !== null ||
+                    next !== null ||
+                    last !== null ||
+                    pages !== null ||
+                    items !== null
+                ) {
+                    setPaginationMeta({ first, prev, next, last, pages, items })
+                } else {
+                    setPaginationMeta(undefined)
+                }
+            } else {
+                setPaginationMeta(undefined)
+            }
+
+            setBooks(data)
         } catch (err: unknown) {
             const maybeErr = err as { name?: string }
             if (maybeErr?.name === 'AbortError') return;
@@ -53,7 +101,7 @@ export default function useFetchBooks(): UseFetchBooksResult {
         } finally {
             setLoading(false);
         }
-    }, [setBooks, setLoading, setError, filters])
+    }, [setBooks, setLoading, setError, setPaginationMeta, filters])
 
     useEffect(() => {
         const controller = new AbortController();
