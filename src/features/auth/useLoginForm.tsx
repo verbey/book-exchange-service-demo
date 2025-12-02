@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form"
 import type { SubmitHandler } from "react-hook-form"
 import { useState } from "react"
 import { useNavigate } from "react-router"
+import useAuthStore from "../../stores/useAuthStore"
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 
@@ -43,6 +44,17 @@ export function useLoginForm() {
 
             const body = await res.json()
             console.log("Login success:", body)
+
+            // json-server used in this demo does not return a JWT or username.
+            // Save mock credentials into the Zustand store so the app can behave
+            // as if the server returned them.
+            const setName = useAuthStore.getState().setName
+            const setJwt = useAuthStore.getState().setJwt
+            const mockName = body?.name ?? data.email.split("@")[0]
+            const mockJwt = body?.token ?? `mock-jwt-${Math.random().toString(36).slice(2)}`
+            setName(mockName)
+            setJwt(mockJwt)
+            console.log("Saved mock auth to store", { mockName, mockJwt })
 
             form.reset()
             navigate("/", { replace: true })
