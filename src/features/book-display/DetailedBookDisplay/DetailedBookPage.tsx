@@ -1,4 +1,4 @@
-import BookCard from "../BookCard";
+import BookCard from "../../../components/BookCard";
 import useDetailedBookFetch from "./useDetailedBookInfoFetch";
 
 function DetailedBookPage() {

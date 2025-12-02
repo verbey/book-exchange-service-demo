@@ -6,7 +6,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import type { BookCardProps } from "./types/BookCardProps";
+import type { BookCardProps } from "../types/BookCardProps";
 import { useCallback } from "react";
 import { useNavigate } from "react-router";
 

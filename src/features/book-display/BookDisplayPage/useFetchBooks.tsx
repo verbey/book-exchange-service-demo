@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from 'react'
-import type { BookCardProps } from '../types/BookCardProps'
+import type { BookCardProps } from '../../../types/BookCardProps'
 import useBooksStore from '../../../stores/useBooksStore'
 
 type UseFetchBooksResult = {

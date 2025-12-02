@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import type { BookCardProps } from '../types/BookCardProps'
+import type { BookCardProps } from '../../../types/BookCardProps'
 import useBooksStore from '../../../stores/useBooksStore'
 
 interface UseDetailedBookResult {

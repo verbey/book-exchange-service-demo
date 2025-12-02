@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import type { BookCardProps } from '../features/book-display/types/BookCardProps'
+import type { BookCardProps } from '../types/BookCardProps'
 
 interface BooksState {
     books: BookCardProps[]

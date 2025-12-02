@@ -1,5 +1,5 @@
-import BookCard from "./BookCard"
-import type { BookCardProps } from "./types/BookCardProps";
+import BookCard from "../../components/BookCard"
+import type { BookCardProps } from "../../types/BookCardProps";
 
 interface BookGridProps {
     books: BookCardProps[]
