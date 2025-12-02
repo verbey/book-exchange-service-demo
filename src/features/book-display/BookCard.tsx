@@ -6,14 +6,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-
-interface BookCardProps {
-    name: string;
-    pages: number;
-    author: string;
-    published: string;
-    imageUrl: string;
-}
+import type { BookCardProps } from "./types/BookCardProps";
 
 function BookCard(props: BookCardProps) {
     return (
@@ -39,4 +32,5 @@ function BookCard(props: BookCardProps) {
         </Card>
     );
 }
+
 export default BookCard;
