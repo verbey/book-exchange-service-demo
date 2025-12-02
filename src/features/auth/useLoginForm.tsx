@@ -23,6 +23,7 @@ export function useLoginForm() {
     const onSubmit: SubmitHandler<z.infer<typeof formSchema>> = async (data) => {
         setIsSubmitting(true)
         try {
+            // NOTE: I am using json-server to mock server logic and this tool cannot return jwt upon POST request
             const res = await fetch("http://localhost:3000/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },

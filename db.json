@@ -3,7 +3,14 @@
         {
             "email": "user@example.com",
             "username": "user123",
-            "password": "password123"
+            "password": "password123",
+            "id": "ca34"
+        }
+    ],
+    "login": [
+        {
+            "jwt": "some-random-text",
+            "id": "a55d"
         }
     ]
 }
