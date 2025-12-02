@@ -14,11 +14,15 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <AuthPage />
+  },
+  {
+    path: "/login",
+    element: <AuthPage />
   }
 ]);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
+  </StrictMode>,
 )
