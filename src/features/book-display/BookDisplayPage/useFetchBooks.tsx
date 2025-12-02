@@ -2,7 +2,7 @@ import { useCallback, useEffect } from 'react'
 import type { BookCardProps } from '../../../types/BookCardProps'
 import useBooksStore from '../../../stores/useBooksStore'
 
-type UseFetchBooksResult = {
+interface UseFetchBooksResult {
     books: BookCardProps[]
     loading: boolean
     error: string | null
