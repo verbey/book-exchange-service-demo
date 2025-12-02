@@ -1,4 +1,4 @@
-import { BookFilters } from "../BookFilters"
+import { BookFilters } from "../BookFilters/BookFilters"
 import { BookGrid } from "../BookGrid"
 import useFetchBooks from "./useFetchBooks";
 

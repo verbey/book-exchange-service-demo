@@ -15,13 +15,29 @@ export default function useFetchBooks(): UseFetchBooksResult {
     const setBooks = useBooksStore((s) => s.setBooks)
     const setLoading = useBooksStore((s) => s.setLoading)
     const setError = useBooksStore((s) => s.setError)
+    const filters = useBooksStore((s) => s.filters)
 
     const fetchBooks = useCallback(async (signal?: AbortSignal) => {
         setLoading(true);
         setError(null);
 
         try {
-            const res = await fetch('http://localhost:3000/books', { signal });
+            // NOTE: For whatever reason, the parameter does not actually filter anything on json-server side
+            // although it should as mentioned in the docs 
+            // https://github.com/typicode/json-server/tree/v0?tab=readme-ov-file#full-text-search
+            // you can verify in the dev tools that my code does send the required params and the server
+            // responds as expected when it comes to sort params
+            const params = new URLSearchParams()
+            if (filters?.q) {
+                params.set('q', filters.q)
+            }
+            if (filters?.sortBy) {
+                params.set('_sort', filters.sortBy)
+                params.set('_order', 'asc')
+            }
+
+            const url = `http://localhost:3000/books${params.toString() ? `?${params.toString()}` : ''}`
+            const res = await fetch(url, { signal });
             if (!res.ok) {
                 throw new Error(`Failed to fetch books: ${res.status} ${res.statusText}`);
             }
@@ -37,7 +53,7 @@ export default function useFetchBooks(): UseFetchBooksResult {
         } finally {
             setLoading(false);
         }
-    }, [setBooks, setLoading, setError])
+    }, [setBooks, setLoading, setError, filters])
 
     useEffect(() => {
         const controller = new AbortController();
