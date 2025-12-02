@@ -1,5 +1,5 @@
 import { BookFilters } from "../BookFilters/BookFilters"
-import { BookGrid } from "../BookGrid"
+import BookGrid from "../BookGrid"
 import ResultsPagination from "../ResultsPagination/ResultsPagination";
 import useFetchBooks from "./useFetchBooks";
 
